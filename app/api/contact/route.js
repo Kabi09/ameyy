@@ -26,18 +26,25 @@ export async function POST(request) {
       );
     }
 
+    const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
+    const smtpPort = parseInt(process.env.SMTP_PORT || '465', 10);
     const smtpUser = process.env.SMTP_USER || 'noreply.ameyy@gmail.com';
     const smtpPass = process.env.SMTP_PASSWORD || 'deqcjrcouaiietji';
     const smtpFrom = process.env.SMTP_FROM || smtpUser;
     const adminRecipients = process.env.ADMIN_EMAIL || 'ameyy.support@gmail.com';
 
-    // Create Gmail transporter with SSL
+    // Create Gmail transporter with fallback and timeout protections
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpPort === 465,
       auth: {
         user: smtpUser,
         pass: smtpPass,
       },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
     });
 
     // 1. Lead notification email sent to admin/team
