@@ -1,4 +1,4 @@
-import { companyInfo } from '../data/companyData';
+const SITE_URL = 'https://ameyy.in';
 
 export default function robots() {
   return {
@@ -6,6 +6,7 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: `${companyInfo.website}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }
+

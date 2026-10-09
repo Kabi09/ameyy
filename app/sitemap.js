@@ -1,12 +1,13 @@
-import { companyInfo } from '../data/companyData';
+const SITE_URL = 'https://ameyy.in';
 
 export default function sitemap() {
   return [
     {
-      url: companyInfo.website,
+      url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
   ];
 }
+
