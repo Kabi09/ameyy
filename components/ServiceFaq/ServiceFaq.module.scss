@@ -1,0 +1,104 @@
+.faqAccordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+
+  &:hover {
+    border-color: var(--accent-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &.open {
+    border-color: var(--accent-border);
+    box-shadow: var(--shadow-md);
+
+    .chevronIcon {
+      transform: rotate(180deg);
+      color: var(--accent-primary);
+    }
+
+    .questionText {
+      color: var(--accent-primary);
+    }
+  }
+}
+
+.faqQuestionButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  text-align: left;
+  background: none;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  gap: 16px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+
+  @media (max-width: 768px) {
+    padding: 16px 18px;
+    font-size: 0.98rem;
+  }
+}
+
+.questionText {
+  flex: 1;
+  line-height: 1.45;
+  transition: color var(--transition-fast);
+}
+
+.chevronIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  transition: transform var(--transition-normal), color var(--transition-fast), background var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.faqAnswerWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transition-normal);
+
+  &.expanded {
+    grid-template-rows: 1fr;
+  }
+}
+
+.faqAnswerContent {
+  overflow: hidden;
+
+  p {
+    padding: 0 24px 22px 24px;
+    font-size: 0.975rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 16px;
+
+    @media (max-width: 768px) {
+      padding: 0 18px 18px 18px;
+      padding-top: 14px;
+      font-size: 0.925rem;
+    }
+  }
+}

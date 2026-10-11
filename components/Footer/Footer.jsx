@@ -46,12 +46,12 @@ export default function Footer() {
           <div className={styles.servicesCol}>
             <h4 className={styles.colHeading}>Capabilities</h4>
             <ul className={styles.linksList}>
-              <li><Link href="/#services" className={styles.linkItem}>Web Development</Link></li>
-              <li><Link href="/#services" className={styles.linkItem}>Custom Software</Link></li>
-              <li><Link href="/#services" className={styles.linkItem}>E-Commerce Platforms</Link></li>
-              <li><Link href="/#services" className={styles.linkItem}>Mobile Applications</Link></li>
-              <li><Link href="/#services" className={styles.linkItem}>UI / UX Systems</Link></li>
-              <li><Link href="/#services" className={styles.linkItem}>Maintenance &amp; Support</Link></li>
+              <li><Link href="/services/web-development" className={styles.linkItem}>Web Development</Link></li>
+              <li><Link href="/services/custom-software-development" className={styles.linkItem}>Custom Software</Link></li>
+              <li><Link href="/services/ecommerce-development" className={styles.linkItem}>E-Commerce Platforms</Link></li>
+              <li><Link href="/services/mobile-app-development" className={styles.linkItem}>Mobile Applications</Link></li>
+              <li><Link href="/services/ui-ux-development" className={styles.linkItem}>UI / UX Systems</Link></li>
+              <li><Link href="/services/maintenance-and-support" className={styles.linkItem}>Maintenance &amp; Support</Link></li>
             </ul>
           </div>
 

@@ -22,6 +22,21 @@ const nextConfig = {
         destination: '/refund-policy',
         permanent: true,
       },
+      {
+        source: '/services/e-commerce-development',
+        destination: '/services/ecommerce-development',
+        permanent: true,
+      },
+      {
+        source: '/services/maintenance-support',
+        destination: '/services/maintenance-and-support',
+        permanent: true,
+      },
+      {
+        source: '/services/ui-ux-design',
+        destination: '/services/ui-ux-development',
+        permanent: true,
+      },
     ];
   },
 };

@@ -56,6 +56,8 @@ export const servicesData = [
   {
     number: "01",
     title: "Web Development",
+    slug: "web-development",
+    href: "/services/web-development",
     description:
       "Modern, responsive and high-performance websites for businesses and organizations, engineered for stability, speed and search visibility.",
     deliverables: ["Corporate Websites", "Web Applications", "Responsive Layouts", "SEO Architecture"],
@@ -63,6 +65,8 @@ export const servicesData = [
   {
     number: "02",
     title: "Custom Software Development",
+    slug: "custom-software-development",
+    href: "/services/custom-software-development",
     description:
       "Business applications designed around specific operational requirements, replacing rigid off-the-shelf tools with purpose-built systems.",
     deliverables: ["Internal Workflows", "API Integrations", "Database Architecture", "Role-Based Portals"],
@@ -70,6 +74,8 @@ export const servicesData = [
   {
     number: "03",
     title: "E-Commerce Development",
+    slug: "ecommerce-development",
+    href: "/services/ecommerce-development",
     description:
       "Scalable online stores with product catalog management, ordering pipelines, cart persistence and secure payment gateway workflows.",
     deliverables: ["Product Catalogs", "Checkout Workflows", "Inventory Sync", "Payment Gateways"],
@@ -77,6 +83,8 @@ export const servicesData = [
   {
     number: "04",
     title: "Mobile App Development",
+    slug: "mobile-app-development",
+    href: "/services/mobile-app-development",
     description:
       "Mobile applications designed for Android and iOS business requirements, with clean user experience and dependable offline/online sync.",
     deliverables: ["Cross-Platform Apps", "Business Utility Apps", "Native Performance", "REST API Sync"],
@@ -84,6 +92,8 @@ export const servicesData = [
   {
     number: "05",
     title: "UI / UX Development",
+    slug: "ui-ux-development",
+    href: "/services/ui-ux-development",
     description:
       "Clean, responsive and user-focused interfaces for web and mobile applications that prioritize clarity, ease of use and reduced cognitive load.",
     deliverables: ["Design Systems", "Interactive Prototypes", "Accessible Markup", "User Journey Flow"],
@@ -91,6 +101,8 @@ export const servicesData = [
   {
     number: "06",
     title: "Maintenance & Support",
+    slug: "maintenance-and-support",
+    href: "/services/maintenance-and-support",
     description:
       "Ongoing improvements, security updates, version maintenance, database backups, performance optimization and reliable technical support.",
     deliverables: ["Version Upgrades", "Uptime Monitoring", "Bug Resolution", "Performance Audits"],
