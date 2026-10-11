@@ -4,7 +4,7 @@ export const companyInfo = {
   tagline: "Building Digital Solutions That Move Businesses Forward.",
   shortDescription:
     "Ameyy Digital Services is a software development and IT services enterprise based in Chennai and Nagapattinam, Tamil Nadu. We build reliable websites, web applications and custom software solutions for businesses.",
-  website: "https://ameyy.in",
+  website: "https://www.ameyy.in",
   email: "ameyy.support@gmail.com",
   founderEmail: "ameyy.support@gmail.com",
   phone: "+91 8883280816",
