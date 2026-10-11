@@ -1795,12 +1795,12 @@ export function getServiceJsonLd(serviceSlug) {
     serviceType: service.name,
     name: service.metaTitle.replace(' | Ameyy Digital Services', ''),
     provider: {
-      '@type': 'ProfessionalService',
+      '@type': 'Organization',
+      '@id': `${BASE_URL}/#organization`,
       name: companyInfo.name,
       url: BASE_URL,
       telephone: companyInfo.phone,
       email: companyInfo.email,
-      priceRange: '$$',
       address: commonAddresses,
     },
     areaServed: [
