@@ -128,19 +128,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
   padding-top: 28px;
   font-size: 0.825rem;
   color: #64748b;
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     align-items: flex-start;
   }
 }
 
 .copyright {
   color: #94a3b8;
+}
+
+.legalNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    gap: 14px;
+  }
+}
+
+.legalLinkItem {
+  color: #94a3b8;
+  font-size: 0.825rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
 }
 
 .locationBadge {

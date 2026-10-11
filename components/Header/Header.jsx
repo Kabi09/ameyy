@@ -23,7 +23,7 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.headerInner}`}>
         {/* Logo */}
-        <Link href="#hero" className={styles.logo} onClick={closeMenu}>
+        <Link href="/" className={styles.logo} onClick={closeMenu}>
           <span className={styles.logoMark}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <polyline points="16 18 22 12 16 6" />
@@ -48,7 +48,7 @@ export default function Header() {
 
         {/* Action Button */}
         <div className={styles.headerActions}>
-          <Link href="#contact" className={styles.talkButton}>
+          <Link href="/#contact" className={styles.talkButton}>
             Let&apos;s Talk
           </Link>
 
@@ -81,7 +81,7 @@ export default function Header() {
           </ul>
 
           <div className={styles.mobileDrawerFooter}>
-            <Link href="#contact" className={styles.mobileTalkBtn} onClick={closeMenu}>
+            <Link href="/#contact" className={styles.mobileTalkBtn} onClick={closeMenu}>
               Let&apos;s Talk
             </Link>
             <div className={styles.mobileContactInfo}>

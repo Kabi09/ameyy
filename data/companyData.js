@@ -29,14 +29,20 @@ export const companyInfo = {
 
 
 export const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "Services", href: "#services" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Process", href: "#process" },
-  { label: "Why Ameyy", href: "#why-ameyy" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#hero" },
+  { label: "Services", href: "/#services" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Process", href: "/#process" },
+  { label: "Why Ameyy", href: "/#why-ameyy" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Contact", href: "/#contact" },
+];
+
+export const legalLinks = [
+  { label: "Terms & Conditions", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Refund Policy", href: "/refund-policy" },
 ];
 
 export const trustPillars = [

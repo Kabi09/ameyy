@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './Footer.module.scss';
-import { companyInfo, navLinks } from '../../data/companyData';
+import { companyInfo, navLinks, legalLinks } from '../../data/companyData';
 
 export default function Footer() {
   return (
@@ -46,12 +46,12 @@ export default function Footer() {
           <div className={styles.servicesCol}>
             <h4 className={styles.colHeading}>Capabilities</h4>
             <ul className={styles.linksList}>
-              <li><Link href="#services" className={styles.linkItem}>Web Development</Link></li>
-              <li><Link href="#services" className={styles.linkItem}>Custom Software</Link></li>
-              <li><Link href="#services" className={styles.linkItem}>E-Commerce Platforms</Link></li>
-              <li><Link href="#services" className={styles.linkItem}>Mobile Applications</Link></li>
-              <li><Link href="#services" className={styles.linkItem}>UI / UX Systems</Link></li>
-              <li><Link href="#services" className={styles.linkItem}>Maintenance &amp; Support</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>Web Development</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>Custom Software</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>E-Commerce Platforms</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>Mobile Applications</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>UI / UX Systems</Link></li>
+              <li><Link href="/#services" className={styles.linkItem}>Maintenance &amp; Support</Link></li>
             </ul>
           </div>
 
@@ -88,6 +88,13 @@ export default function Footer() {
           <p className={styles.copyright}>
             &copy; {companyInfo.copyrightYear} {companyInfo.name}. All rights reserved.
           </p>
+          <div className={styles.legalNav}>
+            {legalLinks.map((item) => (
+              <Link key={item.href} href={item.href} className={styles.legalLinkItem}>
+                {item.label}
+              </Link>
+            ))}
+          </div>
           <div className={styles.bottomLinks}>
             <span className={styles.locationBadge}>Chennai &amp; Nagapattinam, Tamil Nadu, India</span>
           </div>
