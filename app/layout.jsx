@@ -6,7 +6,7 @@ import { companyInfo } from '../data/companyData';
 export const metadata = {
   metadataBase: new URL(companyInfo.website),
   alternates: {
-    canonical: 'https://ameyy.in',
+    canonical: 'https://www.ameyy.in',
   },
   title: {
     default: 'Ameyy Digital Services | Software Development & IT Services',
