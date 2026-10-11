@@ -1,4 +1,4 @@
-const SITE_URL = 'https://ameyy.in';
+const SITE_URL = 'https://www.ameyy.in';
 
 export default function sitemap() {
   const currentDate = new Date();
